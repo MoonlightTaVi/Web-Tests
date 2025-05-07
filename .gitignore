@@ -2,3 +2,6 @@
 .classpath
 target
 .settings
+allure-report
+allure-results
+src/test/resources/report-portal.properties

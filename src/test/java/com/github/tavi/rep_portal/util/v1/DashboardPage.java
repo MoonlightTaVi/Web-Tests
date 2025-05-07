@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.github.tavi.rep_portal.util.IDashboardPage;
 
+import io.qameta.allure.Step;
+
 public class DashboardPage implements IDashboardPage {
 	
 	private WebDriverWait wait;
@@ -36,6 +38,7 @@ public class DashboardPage implements IDashboardPage {
 	
 	
 	@Override
+	@Step("Click 'Add new widget' button")
 	public IDashboardPage startAddingNewWidget() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				btdAddNewWidget
@@ -45,6 +48,7 @@ public class DashboardPage implements IDashboardPage {
 	}
 
 	@Override
+	@Step("Choose widget type")
 	public IDashboardPage chooseWidgetType() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				inradWidgetType
@@ -54,6 +58,7 @@ public class DashboardPage implements IDashboardPage {
 	}
 
 	@Override
+	@Step("Click 'Next step' button")
 	public IDashboardPage clickNextStepButton() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				btnNextStep
@@ -63,6 +68,7 @@ public class DashboardPage implements IDashboardPage {
 	}
 	
 	@Override
+	@Step("Choose some filter type for a widget")
 	public IDashboardPage chooseFilter() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				inradFilter
@@ -72,6 +78,7 @@ public class DashboardPage implements IDashboardPage {
 	}
 
 	@Override
+	@Step("Enter widget name")
 	public IDashboardPage enterWidgetName(String widgetName) {
         wait.until(
         		ExpectedConditions.visibilityOf(
@@ -84,6 +91,7 @@ public class DashboardPage implements IDashboardPage {
 	}
 
 	@Override
+	@Step("Click 'Add' button, finish")
 	public void finishAddingNewWidget() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				btnAdd

@@ -1,5 +1,6 @@
 package com.github.tavi.rep_portal.util;
 
+
 /**
  * Create a new widget (Passing rate summary) on
  * the demo.reportportal.io dash-board,

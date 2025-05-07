@@ -11,6 +11,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.github.tavi.rep_portal.util.ILoginPage;
 
+import io.qameta.allure.Step;
+
 public class LoginPage implements ILoginPage {
 	
 	private WebDriverWait wait;
@@ -29,6 +31,7 @@ public class LoginPage implements ILoginPage {
 	}
 
 	@Override
+	@Step("Log-in to demo.reportportal.io")
 	public void login(String username, String password) {
 		wait.until(
 				ExpectedConditions.visibilityOf(txaUsername)
