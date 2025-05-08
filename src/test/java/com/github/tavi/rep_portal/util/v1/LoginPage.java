@@ -23,6 +23,10 @@ public class LoginPage implements ILoginPage {
 	private WebElement txaPassword;
 	@FindBy(css= "button[type='submit']")
 	private WebElement btnSubmit;
+	@FindBy(xpath= "//a[contains(@class, 'sidebarButton') and contains(@href, '/dashboard')]")
+	private WebElement sbtnDashboards;
+	@FindBy(xpath= "//a[contains(@class, 'gridCell') and text()='DEMO DASHBOARD']")
+	private WebElement cellDefaultDashboard;
 	
 	
 	public LoginPage(WebDriver driver) {
@@ -46,6 +50,22 @@ public class LoginPage implements ILoginPage {
 		txaPassword.sendKeys(password);
 		
 		btnSubmit.click();
+	}
+
+	@Override
+	public void navigateToDashboards() {
+		wait.until(ExpectedConditions.elementToBeClickable(
+				sbtnDashboards
+				));
+		sbtnDashboards.click();
+	}
+
+	@Override
+	public void openDemoDashboard() {
+		wait.until(ExpectedConditions.elementToBeClickable(
+				cellDefaultDashboard
+				));
+		cellDefaultDashboard.click();
 	}
 
 }

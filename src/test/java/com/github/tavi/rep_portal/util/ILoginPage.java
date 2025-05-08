@@ -7,4 +7,7 @@ public interface ILoginPage {
 	
 	public void login(String username, String password);
 	
+	public void navigateToDashboards();
+	public void openDemoDashboard();
+	
 }
