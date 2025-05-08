@@ -53,6 +53,7 @@ public class LoginPage implements ILoginPage {
 	}
 
 	@Override
+	@Step("Navigate to dashboards list")
 	public void navigateToDashboards() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				sbtnDashboards
@@ -61,6 +62,7 @@ public class LoginPage implements ILoginPage {
 	}
 
 	@Override
+	@Step("Open DEMO dashboard")
 	public void openDemoDashboard() {
 		wait.until(ExpectedConditions.elementToBeClickable(
 				cellDefaultDashboard
