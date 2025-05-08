@@ -31,7 +31,7 @@ Using:
 BASE_URL=https://demo.reportportal.io
 USER=default
 PASSWORD=1q2w3e
-API_BASE_URI=https://demo.reportportal.io/api/v1/default_personal
+API_BASE_URI=https://demo.reportportal.io/api/v1/default_personal/dashboard/
 API_KEY=your_api_key
 ```
 
