@@ -47,9 +47,24 @@ Generate report:
 
 `allure generate allure-results --clean -o allure-report`
 
+
 Open report as a web site:
 
 `allure open allure-report`
 
 _You must have Allure Report ([Windows](https://allurereport.org/docs/install-for-windows/)) installed_
+
+## Allure Report screenshots
+
+![Summary](https://github.com/user-attachments/assets/e4dfbca5-163f-466d-9d32-4c3c6fa29228)
+
+_5 test cases passed overall_
+
+![Steps](https://github.com/user-attachments/assets/c6966bf7-7954-48d0-ae5d-dd297314f0c1)
+
+_Detailed `Step`'s with the support of Allure_
+
+
+
+
 
