@@ -58,7 +58,7 @@ public class WidgetTest {
 
         // Navigate to dashboard
         wait.until(ExpectedConditions.urlContains("/ui/#default_personal/launches/all"));
-        driver.get(BASE_URL + "/ui/#default_personal/dashboard/14");
+        driver.get(BASE_URL + "/ui/#default_personal/dashboard/17");
 
         IDashboardPage dashboard = new DashboardPage(driver)
         		.startAddingNewWidget()
